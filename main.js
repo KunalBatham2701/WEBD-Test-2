@@ -1,4 +1,4 @@
-var search = document.getElementById('sear');
+var search = document.getElementById('searchbtn');
 var form = document.getElementById('form');
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -18,7 +18,7 @@ function search_movie() {
         });
 }
 function add_search(data) {
-      var search_movies = document.querySelector(".s-box"); 
+      var search_movies = document.querySelector(".search-box"); 
       var movies = document.querySelector(".moviess");
       movies.innerHTML='';
       console.log(data);
