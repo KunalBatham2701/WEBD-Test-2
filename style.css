@@ -1,0 +1,104 @@
+.cont{
+    border: 3px solid rgb(177, 177, 177);
+    height: 140px;
+    width: 800px;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.sch{
+    align-self: center;
+}
+.txt{
+    color: var(--t-color);
+    text-decoration: underline;
+}
+.s-box{
+    height: 25px;
+}
+.s-btn{
+    height: 30px;
+}
+.bdy{
+    display: flex;
+    flex-direction: column;
+}
+.bgrnd-clrs{
+display: flex;
+justify-content: space-evenly;
+margin-top: 20px;
+padding-top: 10px;
+height: 40px;
+width: 300px;
+align-self: center;
+border-bottom-left-radius: 8px;
+border-bottom-right-radius: 8px;
+}
+
+input[type='radio'] {
+border: 2px solid black;
+border-radius: 50%;
+height: 1.5rem;
+width: 1.5rem;
+appearance: none;
+}
+input[type='radio']:checked {
+background-color: var(--radio-color);
+} 
+
+#light{
+--radio-color: rgb(150, 13, 38);
+}
+
+
+#blue {
+--radio-color: rgb(49, 156, 192);
+}
+
+#pink {
+--radio-color: rgb(233, 46, 155);
+}
+
+#green {
+--radio-color: rgb(19, 177, 42);
+}
+
+#grey {
+--radio-color: rgb(155, 154, 154);
+}
+
+:root:has(#light:checked) {
+background-color: red;
+--t-color:rgb(150, 13, 38);
+}
+
+:root:has(#grey:checked) {
+
+background-color: rgba(216, 216, 216, 0.844);
+--t-color: black;
+}
+
+:root:has(#blue:checked) {
+background-color: lightblue;
+--t-color:rgb(49, 156, 192);
+}
+
+:root:has(#pink:checked) {
+background-color: pink;
+--t-color: rgb(233, 46, 155);
+}
+
+:root:has(#green:checked) {
+background-color: green;
+--t-color: rgb(19, 177, 42);
+}
+.moviess{
+border: 5px solid rgb(177, 177, 177);
+width: 800px;
+align-self: center;
+display: flex;
+flex-wrap: wrap;
+justify-content:space-evenly;
+}
